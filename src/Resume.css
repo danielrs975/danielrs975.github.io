@@ -1,0 +1,13 @@
+
+/* This class style all the
+navigation bar */
+.navigation-bar {
+    height: 4em;
+    border-radius: 0px;
+}
+
+/* This class customize the name of the
+person resume */
+.navbar-header-my-name {
+    margin-left: 0px;
+}
