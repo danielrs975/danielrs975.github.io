@@ -8,6 +8,10 @@ navigation bar */
 
 /* This class customize the name of the
 person resume */
-.navbar-header-my-name {
-    margin-left: 0px;
+.my-name {
+    margin-left: 100px;
+}
+
+.option-menu {
+    margin-left: 76%;
 }
