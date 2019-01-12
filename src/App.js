@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Resume.css';
-import MyNavigationBar from './NavBar'
+import MyNavBar from './NavBar'
 
 class App extends Component {
   render() {
+    const skills = ['Programming Languages', 'Web Development', 'Database', 'Languages']
     return (
       <div className="App">
-        <MyNavigationBar nombre="Daniel Rodríguez"/>
-        Hello I am Daniel and This is my Portfolio
+        <MyNavBar nombre="Daniel Rodríguez" skills={skills}/>
       </div>
     );
   }
