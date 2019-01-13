@@ -35,6 +35,21 @@ person resume */
     background-color: #2e2e2e !important;
 }
 
+.panel-izquierdo {
+    width: 50%;
+}
+
+.panel-izquierdo > .container {
+    height: 75em;
+}
+
 .font {
     font-family: 'Marcellus', serif; 
+}
+
+.photo-circle {
+    width: 140%;
+    border-radius: 100%;
+    margin-top: 72%;
+    margin-left: 87%;
 }

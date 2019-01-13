@@ -10,10 +10,6 @@ function MyNavBar(props){
     const skillsList = skills.map((skill, index) => 
         <MenuItem key={index} eventKey={index}>{skill}</MenuItem>
     );
-    const navStyle = {
-        color: '#dce3e3',
-        fontSize: 25
-    }
     return (
         <Navbar inverse fixedTop collapseOnSelect className="font">
             <Navbar.Header>
