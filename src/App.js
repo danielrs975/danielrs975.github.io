@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './Resume.css';
 import MyNavBar from './NavBar';
-import Perfil from './Perfil';
+import Welcome from './Welcome';
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <MyNavBar nombre="Daniel Rodríguez" skills={skills}/>
-        <Perfil />
+        <Welcome />
       </div>
     );
   }

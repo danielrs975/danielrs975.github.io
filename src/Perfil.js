@@ -2,7 +2,6 @@
  *  la seccion de perfil
  */
 import React from 'react';
-import PanelI from './PanelI'
 
 function Perfil(props){
     return (
