@@ -42,7 +42,7 @@ person resume */
     background-image: linear-gradient(to top, rgba(103, 103, 103, 1) -5%, rgba(46, 46, 46, 1) 41%);
     color: #dce3e3;
     font-family: 'Marcellus', serif;
-    height: 85em;
+    height: 67em;
 }
 
 .gradient {
@@ -55,7 +55,7 @@ person resume */
 }
 
 .container {
-    width: 1170px !important;
+    width: 1610px !important;
 }
 
 .font {
@@ -65,6 +65,6 @@ person resume */
 .photo-circle {
     width: 77%;
     border-radius: 100%;
-    margin-top: 44%;
+    margin-top: 30%;
     margin-left: 117%;
 }
