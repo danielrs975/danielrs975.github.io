@@ -3,6 +3,7 @@ import './App.css';
 import './Resume.css';
 import MyNavBar from './NavBar';
 import Welcome from './Welcome';
+import Skills from './Skills';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <MyNavBar nombre="Daniel Rodríguez" skills={skills}/>
         <Welcome />
+        <Skills />
       </div>
     );
   }

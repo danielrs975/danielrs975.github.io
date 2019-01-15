@@ -39,7 +39,7 @@ person resume */
     width: 100%;
     margin-right: 0px;
     float: left;
-    background-image: linear-gradient(to top, rgba(103, 103, 103, 1) -5%, rgba(46, 46, 46, 1) 41%);
+    background-image: linear-gradient(to top, rgba(103, 103, 103, 1) 5%, rgba(46, 46, 46, 1) 41%);
     color: #dce3e3;
     font-family: 'Marcellus', serif;
     height: 67em;
@@ -71,4 +71,35 @@ person resume */
     border-radius: 100%;
     margin-top: 30%;
     margin-left: 118%;
+}
+
+/* Skills */
+/* Programming languages section */
+
+.programming-section {
+    background-color: #676767;
+}
+
+.section-name {
+    font-size: 50px !important;
+    float: left;
+    margin-bottom: 55px;
+}
+
+.second-row {
+    margin-top: 100px;
+    padding-left: 230px;
+    width: 113%;
+}
+
+/* Style for the SkillsContainer */
+
+.container-skills {
+    font-family: 'Source Code Pro', monospace;
+    width: 360px;
+}
+
+.image-circle {
+    width: 58%;
+    height: 200px;
 }
