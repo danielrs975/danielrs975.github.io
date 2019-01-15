@@ -1,6 +1,6 @@
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { Jumbotron, Grid, Row, Col, Image, Glyphicon, Button } from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, Image, Glyphicon } from 'react-bootstrap';
 import foto from './foto.png'
 
 const Box = posed.div({
