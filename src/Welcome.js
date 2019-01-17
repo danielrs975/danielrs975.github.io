@@ -1,6 +1,6 @@
 import React from 'react';
 import posed, { PoseGroup } from 'react-pose';
-import { Jumbotron, Grid, Row, Col, Image, Glyphicon } from 'react-bootstrap';
+import { Jumbotron, Grid, Image, Glyphicon } from 'react-bootstrap';
 import foto from './foto.png'
 
 const Box = posed.div({
@@ -32,14 +32,12 @@ class Welcome extends React.Component {
                 <Grid>
                     <PoseGroup>
                         {isVisible && [
-                            <Box key="welcome"> 
-                                <Row>
-                                    <Col xs={6} md={4}>
-                                        <Image src={foto} circle bsClass="photo"/>
-                                    </Col>
-                                </Row>
-                                <h1>Welcome!</h1>
-                                <h2>My name is Daniel and this is my portfolio</h2>
+                            <Box key="welcome">
+                                <div className="welcome-message">
+                                    <Image src={foto} circle bsClass="photo"/>
+                                    <h1>Welcome!</h1>
+                                    <h2>My name is Daniel and this is my portfolio</h2>
+                                </div>
                             </Box>,
                         ]}
                     </PoseGroup>
