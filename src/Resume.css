@@ -1,104 +1,80 @@
-
-/* This class style all the
-navigation bar */
-.navigation-bar {
-    height: 4em;
-    border-radius: 0px;
+/* NavBar style space */
+nav {
+    font-family: 'Righteous', monospace;
+    font-size: 23px !important;
+    background-color: #0012E8;
 }
 
-/* This class customize the name of the
-person resume */
-.my-name {
-    font-size: 30px;
-}
-
-.menu > a {
-    font-size: 21px;
-    padding-bottom: 10px !important;
-}
-
-.menu > a:hover {
-    border-bottom: 4.9px #ffffff solid;
-    background-color: #414141 !important;
-}
-
-.menu > a:active {
-    border-bottom: 4.9px #ffffff solid;
-    background-color: #414141 !important;
-}
-
-.option-menu {
-    margin-left: 76%;
-}
-
-.bg-primary {
-    background-color: #2e2e2e !important;
-}
-
-.welcome-panel {
+#sprite-daniel {
     width: 100%;
-    margin-right: 0px;
-    float: left;
-    background-image: linear-gradient(to top, rgba(103, 103, 103, 1) 5%, rgba(46, 46, 46, 1) 41%);
-    background-size: cover;
-    color: #dce3e3;
-    font-family: 'Marcellus', serif;
-    height: 67em;
-}
-
-.welcome-panel > .glyphicon {
-    font-size: 70px;
-}
-
-.welcome-message {
-    margin-top: 10%;
-    margin-bottom: 6%;
-}
-
-.gradient {
-    width: 100%;
-    height: 20em;
-}
-
-.font {
-    font-family: 'Marcellus', serif; 
-}
-
-.photo-circle {
-    width: 40%;
-    height: auto;
-    border-radius: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    position: relative;
+    bottom: 6px;
 }
 
-/* Skills */
-/* Programming languages section */
-
-.programming-section {
-    background-color: #676767;
+.image-responsive {
+    width: 50px;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-column-gap: 10px;
 }
 
-.section-name {
-    font-size: 50px !important;
-    float: left;
-    margin-bottom: 55px;
+.navbar-brand {
+    color: #E8B707 !important;
 }
 
-.second-row {
-    margin-top: 100px;
-    padding-left: 230px;
+#nav-opciones {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 0%;
 }
 
-/* Style for the SkillsContainer */
-
-.container-skills {
-    font-family: 'Source Code Pro', monospace;
-    width: 360px;
+#menu-mobile {
+    display: none;
 }
 
-.image-circle {
-    width: 58%;
-    height: 200px;
+@media (max-width: 991px) {
+    .navbar-nav > a {
+        display: none;
+    }
+    #menu-mobile {
+        display: inherit;
+        color: #E8B707 !important;
+    }
 }
+
+.nav-item {
+    padding-bottom: 12px;
+    color: rgba(0,0,0,0.5) !important;
+}
+
+.nav-item:hover {
+    animation-name: pointed;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    padding-bottom: 4px;
+}
+
+/* Animacion para las opciones del navbar */
+@keyframes pointed {
+    0% {
+        border-bottom-width: 0px;
+    }
+    100% {
+        border-bottom-width: 5px;
+        border-bottom-color: #E8B707;
+        border-bottom-style: solid;
+        color: rgba(232,183,7,1);
+    }
+}
+
+.active {
+    border-bottom-width: 5px;
+    border-bottom-color: #E8B707;
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+    color: #E8B707 !important;
+}
+/* End */

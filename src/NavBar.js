@@ -3,35 +3,27 @@ This script implements the
 navigation bar component
  */
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import sprite from './danielSprite.png';
 
 function MyNavBar(props){
-    const skills = props.skills
-    const skillsList = skills.map((skill, index) => 
-        <MenuItem key={index} eventKey={index}>{skill}</MenuItem>
-    );
     return (
-        <Navbar inverse fixedTop collapseOnSelect className="font">
-            <Navbar.Header>
-                <Navbar.Brand>
-                    <span className="my-name">Daniel Rodríguez</span>
-                </Navbar.Brand>
-            <Navbar.Toggle />
-            </Navbar.Header>
-            <Navbar.Collapse>
-                <Nav pullRight>
-                    <NavItem eventKey={1} href="#" className="menu">
-                        Profile
-                    </NavItem>
-                    <NavDropdown eventKey={2} title="Skills" id="basic-nav-dropdown" className="menu">
-                        {skillsList}
-                    </NavDropdown>
-                    <NavItem eventKey={3} href="#" className="menu">
-                        Projects
-                    </NavItem>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <nav className="navbar fixed-top navbar-expand-lg navbar-light" style={{paddingBottom: '0px'}}>
+            <div id="nav-header">
+                <div className="image-responsive">
+                    <img id="sprite-daniel" src={sprite} alt="sprite-daniel"/>
+                    <h2 className="navbar-brand mb-0 h1" style={{paddingBottom: '12px', fontSize: '23px'}}>DRSOFTDEVELOPER</h2>
+                </div>
+            </div>
+            <div className="collapse navbar-collapse" id="nav-opciones">
+                <div className="navbar-nav">
+                    <a className="nav-item nav-link active" href="#welcome-section">Home</a>
+                    <a className="nav-item nav-link" href="#about-me">About Me</a>
+                    <a className="nav-item nav-link" href="#portfolio">Projects</a>
+                    <a className="nav-item nav-link" href="#footer">Contact</a>
+                    <a className="nav-item nav-link" href="#menu" id="menu-mobile" style={{fontSize: '28px'}}><i className="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>        
     );
 }
 
