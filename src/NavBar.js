@@ -20,7 +20,7 @@ function MyNavBar(props){
                     <a className="nav-item nav-link" href="#about-me">About Me</a>
                     <a className="nav-item nav-link" href="#portfolio">Projects</a>
                     <a className="nav-item nav-link" href="#footer">Contact</a>
-                    <a className="nav-item nav-link" href="#menu" id="menu-mobile" style={{fontSize: '28px'}}><i className="material-icons">menu</i></a>
+                    <a className="nav-item nav-link" href="#menu" id="menu-mobile"><i className="material-icons" style={{fontSize: '28px'}}>menu</i></a>
                 </div>
             </div>
         </nav>        
