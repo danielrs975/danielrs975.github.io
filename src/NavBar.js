@@ -11,7 +11,7 @@ function MyNavBar(props){
             <div id="nav-header">
                 <div className="image-responsive">
                     <img id="sprite-daniel" src={sprite} alt="sprite-daniel"/>
-                    <h2 className="navbar-brand mb-0 h1" style={{paddingBottom: '12px', fontSize: '23px'}}>DANIEL RODRÍGUEZ</h2>
+                    <h2 id="name" className="navbar-brand mb-0 h1">DANIEL RODRÍGUEZ</h2>
                 </div>
             </div>
             <div className="collapse navbar-collapse" id="nav-opciones">

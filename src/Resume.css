@@ -31,6 +31,11 @@ nav {
     flex-basis: 0%;
 }
 
+#name {
+    padding-bottom: 12px;
+    font-size: 23px;
+}
+
 #menu-mobile {
     display: none;
 }
@@ -42,6 +47,19 @@ nav {
     #menu-mobile {
         display: inherit;
         color: #E8B707 !important;
+    }
+}
+
+@media (max-width: 320px) {
+    #name {
+      font-size: 18px;
+      margin-top: 3px;
+    }
+    .image-responsive {
+        grid-template-columns: 40px 50px;
+    }
+    #sprite-daniel {
+        align-self: center;
     }
 }
 
