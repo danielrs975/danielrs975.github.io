@@ -96,3 +96,109 @@ nav {
     color: #E8B707 !important;
 }
 /* End */
+
+/* Landing screen Styling */
+#welcome-section {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 90% 10%;
+    font-family: monospace;
+}
+
+#welcome-message {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 70% 36.59px;
+}
+
+#presentation {
+    justify-self: center;
+    font-size: 4rem;
+}
+
+#description {
+    display: flex;
+    justify-self: center;
+}
+
+#little-description {
+    align-self: end;
+    justify-self: center;
+}
+
+/* Terminal insert animation */
+#underscore {
+    background-color: black;
+    width: 23px;
+    height: 4px;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    align-self: flex-end;
+    animation-name: terminal;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes terminal {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* End of the animation */
+
+/* Block that manage the responsive
+part the jumbotron */
+
+@media (max-width: 641px) {
+    #presentation {
+        font-size: 2.7rem;
+    }
+    .bottom-jumbo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 517px) {
+    .explanation {
+        font-size: 23px;
+    }
+    #underscore {
+        width: 14px;
+        height: 3px;
+    }
+    #welcome-message {
+        grid-template-rows: 70% 28px;
+    }
+    .bottom-jumbo {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 422px){
+    #presentation {
+        font-size: 1.9rem;
+    }
+    .explanation {
+        font-size: 18px;
+    }
+    #welcome-message {
+        grid-template-rows: 70% 23px;
+    }
+    #underscore {
+        width: 10px;
+        height: 2px;
+    }
+    .bottom-jumbo {
+        font-size: 0.9rem;
+    }
+}
+/* End of the block */
+/* End of the block for styling of the landing
+screen */
