@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './Resume.css';
 import MyNavBar from './NavBar';
+import WelcomeMessage from './WelcomeMessage';
 
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <MyNavBar />
+        <WelcomeMessage />
       </div>
     );
   }
