@@ -103,6 +103,7 @@ nav {
     height: 100vh;
     grid-template-rows: 90% 10%;
     font-family: monospace;
+    background-color: #0012E8; 
 }
 
 #welcome-message {
@@ -110,6 +111,7 @@ nav {
     justify-self: center;
     display: grid;
     grid-template-rows: 70% 36.59px;
+    color: white;
 }
 
 #presentation {
@@ -125,11 +127,12 @@ nav {
 #little-description {
     align-self: end;
     justify-self: center;
+    color: white;
 }
 
 /* Terminal insert animation */
 #underscore {
-    background-color: black;
+    background-color: white;
     width: 23px;
     height: 4px;
     margin-bottom: 3px;
