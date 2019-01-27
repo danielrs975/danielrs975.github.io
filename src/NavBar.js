@@ -17,7 +17,7 @@ function MyNavBar(props){
             <div className="collapse navbar-collapse" id="nav-opciones">
                 <div className="navbar-nav">
                     <a className="nav-item nav-link active" href="#welcome-section">Home</a>
-                    <a className="nav-item nav-link" href="#about-me">About Me</a>
+                    <a className="nav-item nav-link" href="#about-me-section">About Me</a>
                     <a className="nav-item nav-link" href="#portfolio">Projects</a>
                     <a className="nav-item nav-link" href="#footer">Contact</a>
                     <a className="nav-item nav-link" href="#menu" id="menu-mobile"><i className="material-icons" style={{fontSize: '28px'}}>menu</i></a>
