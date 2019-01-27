@@ -4,7 +4,7 @@ function WelcomeMessage(props) {
     return (
     <div id="welcome-section" className="jumbotron">
         <div id="welcome-message">
-            <h1 id="presentation" style={{textAlign: 'center'}}>Hi! I'm <b style={{color: '#E8B707'}}>Daniel</b>.</h1>
+            <h1 id="presentation" style={{textAlign: 'center'}}>Hi! I'm <b style={{color: '#00B8D4'}}>Daniel</b>.</h1>
             <div id="description">
                 <h2 className="explanation" style={{marginBottom: '0px'}}>And this is my Portfolio</h2>
                 <div id="underscore"></div>
