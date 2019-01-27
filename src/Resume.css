@@ -270,7 +270,7 @@ nav {
 
 .animated-fadeIn-right {
   position: relative;
-  left: 20%;
+  left: 3%;
   animation-name: fadeIn-right;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -288,7 +288,7 @@ nav {
 
 .animated-fadeIn-left {
   position: relative;
-  right: 20%;
+  right: 3%;
   animation-name: fadeIn-left;
   animation-duration: 2s;
   animation-fill-mode: forwards;
