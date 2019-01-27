@@ -3,6 +3,7 @@ import './App.css';
 import './Resume.css';
 import MyNavBar from './NavBar';
 import WelcomeMessage from './WelcomeMessage';
+import AboutMe from './AboutMe';
 
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <MyNavBar />
         <WelcomeMessage />
+        <AboutMe />
       </div>
     );
   }
