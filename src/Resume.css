@@ -385,7 +385,7 @@ nav {
   opacity: 0;
 }
 
-.language-container::before {
+/* .language-container::before {
   background-color: #25559d;
   content: "";
   width: 8vw;
@@ -406,12 +406,11 @@ nav {
   bottom: -0.65vw;
   left: -0.48vw;
   z-index: -1;
-}
+} */
 
 .language{
   font-size: 4.5vw;
   position: relative;
-  left: 20%;
 }
 
 .second-column {
@@ -443,7 +442,7 @@ nav {
   opacity: 0;
 }
 
-.framework-container::before {
+/* .framework-container::before {
   background-color: #25559d;
   content: '';
   width: 8vw;
@@ -464,12 +463,11 @@ nav {
   bottom: -0.65vw;
   left: -0.48vw;
   z-index: -1;
-}
+} */
 
 .framework {
   font-size: 4.5vw;
   position: relative;
-  left: 20%;
 }
 
 #characteristics {
