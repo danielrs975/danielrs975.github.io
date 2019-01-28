@@ -5,7 +5,7 @@ import Information from './Information';
 
 function AboutMe(props){
     return (
-        <div id="about-me-section" className="jumbotron">
+        <div id="about-me-section" className="jumbotron container-fluid">
           <div className="animation">
             <h1 className="sections-names">About Me</h1>
             <div className="underline"></div>

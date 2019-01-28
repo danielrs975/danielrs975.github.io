@@ -3,11 +3,11 @@ import Caracteristics from './Caracteristics';
 
 function Information(props) {
     return (
-        <div id="information">
+        <div id="information" class="container-fluid">
             <h2 className="subtitles subsections-left-1">Who am I?</h2>
             <div id="photo-information">
                 <div className="profile-photo">
-                    <img src={props.photo} alt="my-self" className="photo"></img>
+                    <img src={props.photo} alt="my-self" className="photo img-responsive"></img>
                 </div>
                 <div id="little-about-myself">
                     <p>
