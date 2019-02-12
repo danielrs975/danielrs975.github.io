@@ -3,7 +3,7 @@ import LanguageContainer from './LanguageContainer';
 
 function Skills(props) {
     return (
-        <div id="skills" class="container-fluid">
+        <div id="skills">
             <h2 className="subtitles subsections">Programming Languages</h2>
             <div id="programming-languages">
                 <LanguageContainer container="language-container" language="mdi mdi-language-python language" percentage="70%" column="first-column" />
