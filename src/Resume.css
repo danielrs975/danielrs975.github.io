@@ -326,14 +326,14 @@ nav {
 
 #photo-information {
   display: grid;
-  grid-template-rows: 12vw 9vw auto;
+  grid-template-rows: 15vw 7vw auto;
   height: 70%;
   position: relative;
-  top: 1vw;
+  top: 10px;
 }
 
 .profile-photo {
-  width: 13.5vw;
+  width: 15vw;
   opacity: 0;
   height: auto;
   align-self: center;
@@ -350,13 +350,12 @@ nav {
 #little-about-myself {
   align-self: center;
   justify-self: center;
-  width: 42vw;
+  width: 60%;
   opacity: 0;
 }
 
 #little-about-myself > p {
   text-align: center;
-  font-size: 1.2vw;
 }
 
 #frameworks-libraries{
@@ -493,10 +492,6 @@ nav {
   width: 14vw;
 }
 
-.phrase > p {
-  font-size: 1vw;
-}
-
 .icon {
   font-size: 3vw;
   color: #00B8D4;
@@ -545,33 +540,4 @@ nav {
     font-size: 1.1vw;
   }
 }
-
-.subsections-names {
-  font-size: 2vw;
-}
-
-@media (max-width: 1440px) {
-  .subsections-names {
-    font-size: 2.8vw;
-  }
-  #little-about-myself {
-    font-size: 1.7vw;
-  }
-  .phrase > p {
-    font-size: 1.7vw;
-  }
-  #photo-information {
-    grid-template-rows: 12vw 13vw auto;
-  }
-  #skills-and-information {
-    grid-template-rows: 50vw 44vw;
-  }
-  .phrase {
-    width: 23vw;
-  }
-  #little-about-myself > p {
-    font-size: 1.6vw;
-  }
-}
-
 /* end of the block */
