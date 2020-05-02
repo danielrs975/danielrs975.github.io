@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-import './Resume.css';
-import MyNavBar from './NavBar';
-import WelcomeMessage from './WelcomeMessage';
-import AboutMe from './AboutMe';
-
+import './styles/App.css';
+import './styles/Resume.css';
+import MyNavBar from './components/NavBar';
+import WelcomeMessage from './components/WelcomeMessage';
 
 class App extends Component {
   render() {
@@ -12,7 +10,6 @@ class App extends Component {
       <div className="App">
         <MyNavBar />
         <WelcomeMessage />
-        <AboutMe />
       </div>
     );
   }
