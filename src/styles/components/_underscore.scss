@@ -1,0 +1,24 @@
+/* Terminal insert animation */
+#underscore {
+	background-color: white;
+	width: 23px;
+	height: 4px;
+	margin-bottom: 3px;
+	border-radius: 2px;
+	align-self: flex-end;
+	animation-name: terminal;
+	animation-duration: 1.1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes terminal {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

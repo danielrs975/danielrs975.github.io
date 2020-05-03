@@ -1,0 +1,33 @@
+/* Landing screen Styling */
+#welcome-section {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 90% 10%;
+	font-family: monospace;
+	background-color: #455a64;
+	margin-bottom: 0px;
+}
+
+#welcome-message {
+	align-self: center;
+	justify-self: center;
+	display: grid;
+	grid-template-rows: 70% 36.59px;
+	color: white;
+}
+
+#presentation {
+	justify-self: center;
+	font-size: 4rem;
+}
+
+#description {
+	display: flex;
+	justify-self: center;
+}
+
+#little-description {
+	align-self: end;
+	justify-self: center;
+	color: white;
+}
