@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "http://danielrs975.github.io/resume",
   "dependencies": {
-    "bootstrap": "^4.2.1",
     "node-sass": "^4.14.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-pose": "^4.0.5",
