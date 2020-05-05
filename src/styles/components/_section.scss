@@ -1,0 +1,17 @@
+.section {
+    height: 100vh;
+    padding: $l-size 0;
+}
+
+.section--welcome {
+    background: $dark-blue;
+    color: $clear-grey;
+}
+
+.section__header {
+    font-family: $righteous-font;
+    text-align: center;
+    h1 {
+        margin: 0;
+    }
+}
