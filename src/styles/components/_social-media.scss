@@ -1,0 +1,11 @@
+.social-medias {
+    justify-content: space-evenly;
+}
+
+.social-medias__icon {
+    color: fade-out($color: $clear-grey, $amount: 0.3);
+}
+
+.social-medias__icon:hover {
+    color: fade-in($color: $clear-grey, $amount: 0.5);
+}
