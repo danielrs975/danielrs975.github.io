@@ -1,0 +1,16 @@
+.about-me__content {
+    justify-content: space-evenly;
+    padding: $l-size 0;
+}
+
+.about-me__photo {
+    width: 36rem;
+    img {
+        width: 100%;
+        border-radius: 60%;
+    }
+}
+
+.about-me__bio {
+    text-align: center;
+}
