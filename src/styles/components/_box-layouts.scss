@@ -1,6 +1,7 @@
 .row {
     display: flex;
     flex-direction: row;
+    padding: $s-size 0;
 }
 
 .column {
@@ -12,4 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.evenly-distributed {
+    justify-content: space-evenly;
 }

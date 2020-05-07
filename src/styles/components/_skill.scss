@@ -1,0 +1,27 @@
+.skill {
+    width: 16rem;
+    height: 20rem;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .skills {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.skill__level {
+    width: 100%;
+}
+
+.level__circle {
+    border-color: $dark-blue;
+    height: $skill-circle-size;
+    width: $skill-circle-size;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+.level__circle--on {
+    background-color: $dark-blue;
+}

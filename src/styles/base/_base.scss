@@ -29,3 +29,15 @@ button:disabled {
 p {
 	font-family: $raleway-font;
 }
+
+@media (max-width: $desktop-breakpoint) {
+	p {
+		font-size: $font-size-small
+	}
+	h2 {
+		font-size: 2.8rem !important;
+	}
+	h3 {
+		font-size: 2.4rem !important;
+	}
+}
