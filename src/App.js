@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import NavBar from './components/NavBar';
 import WelcomeSection from './components/WelcomeSection';
 import AboutMeSection from './components/AboutMeSection';
+import PortfolioSection from './components/PortfolioSection'
 
 class App extends Component {
 	render() {
@@ -12,6 +13,7 @@ class App extends Component {
 				<NavBar />
 				<WelcomeSection />
 				<AboutMeSection />
+				<PortfolioSection />
 			</div>
 		);
 	}
