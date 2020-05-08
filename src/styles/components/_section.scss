@@ -8,6 +8,11 @@
     height: 100vh;
 }
 
+.section--contact-me {
+    @extend .section--welcome;
+    height: auto;
+}
+
 .section__header {
     border-bottom: $dark-blue;
     border-bottom-style: dotted;

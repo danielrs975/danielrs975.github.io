@@ -1,0 +1,20 @@
+.footer__header {
+    font-family: $righteous-font;
+    h2 {
+        font-weight: 100;
+    }
+}
+
+.page-info {
+    text-align: center;
+    h3 {
+        font-family: $righteous-font;
+        font-weight: 100;
+    }
+}
+
+.page-info__love-icon {
+    margin: 0 0.7rem;
+    color: $heart-color;
+    font-size: 1.7rem;
+}
