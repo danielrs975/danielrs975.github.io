@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import ContactForm from './ContactForm';
 
 const ContactMeSection = () => {
     return (
@@ -12,21 +13,7 @@ const ContactMeSection = () => {
                         <div className="footer__header">
                             <h2>CONTACT ME</h2>
                         </div>
-                        <form className="contact-me__form">
-                            <div>
-                                <label>Email: </label>
-                                <input type="text" />
-                            </div>
-                            <div>
-                                <label>Subject: </label>
-                                <input type="text" />
-                            </div>
-                            <div>
-                                <label>Message: </label>
-                                <input type="text" />
-                            </div>
-                            <button>Sent</button>
-                        </form>
+                        <ContactForm />
                     </div>
                     <div className="page-info">
                         <h3>Build with</h3>
@@ -34,7 +21,7 @@ const ContactMeSection = () => {
                         <h3>
                             Made with 
                             <FontAwesomeIcon icon={faHeart} className="page-info__love-icon" />
-                            by Daniel Rodriguez
+                            by Daniel R
                         </h3>
                     </div>
                 </div>
