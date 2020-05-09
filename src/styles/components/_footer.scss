@@ -6,6 +6,10 @@
 }
 
 .page-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     h3 {
         font-family: $righteous-font;
@@ -17,4 +21,14 @@
     margin: 0 0.7rem;
     color: $heart-color;
     font-size: 1.7rem;
+}
+
+.footer__content {
+    @extend .row;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .footer__content {
+        flex-direction: column;
+    }
 }

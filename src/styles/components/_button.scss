@@ -1,0 +1,19 @@
+.button {
+    background: $clear-grey !important;
+    font-family: $raleway-font !important;
+    font-weight: bold !important;
+    color: $dark-blue !important;
+    padding: $s-size 0 !important;
+    p {
+        margin: 0;
+        margin-left: 0.4rem;
+    }
+}
+
+.button:hover {
+    background: darken($color: $clear-grey, $amount: 10%) !important;
+}
+
+.button--sent {
+    width: 100% !important;
+}

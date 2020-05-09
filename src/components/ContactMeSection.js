@@ -8,7 +8,7 @@ const ContactMeSection = () => {
     return (
         <div id="contactMe" className="section section--contact-me">
             <div className="content-container">
-                <div className="row evenly-distributed footer__content">
+                <div className="evenly-distributed footer__content">
                     <div className="contact-me">
                         <div className="footer__header">
                             <h2>CONTACT ME</h2>

@@ -1,4 +1,9 @@
 import React from 'react'
+import Button from '@material-ui/core/Button';
+import { TextField } from '@material-ui/core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 export default class ContactForm extends React.Component {
     state = {
@@ -24,17 +29,14 @@ export default class ContactForm extends React.Component {
 
     render() {
         return (
-            <form className="contact-me__form" onSubmit={this.onSubmit}>
-                <div>
-                    <input type="text" placeholder="E-mail" value={this.state.email} onChange={this.onEmailChange} />
-                </div>
-                <div>
-                    <input type="text" placeholder="Subject" value={this.state.subject} onChange={this.onSubjectChange} />
-                </div>
-                <div>
-                    <input type="text" placeholder="Message" value={this.state.message} onChange={this.onMessageChange} />
-                </div>
-                <button>Sent</button>
+            <form className="contact-me__form" autoComplete="off" onSubmit={this.onSubmit}>
+                <TextField variant="filled" label="E-mail" value={this.state.email} onChange={this.onEmailChange} className="form-field" />
+                <TextField variant="filled" label="Subject" value={this.state.subject} onChange={this.onSubjectChange} className="form-field" />
+                <TextField variant="filled" label="Message" value={this.state.message} onChange={this.onMessageChange} className="form-field" />
+                <Button variant="contained" className="button button--sent">
+                    <FontAwesomeIcon icon={faPaperPlane} size="lg" />
+                    <p>Sent</p>
+                </Button>
             </form>
         )
     }

@@ -1,0 +1,15 @@
+.form-field {
+    width: 100%;
+    margin: 0.5rem 0 !important;
+    & label.Mui-focused, .MuiInputBase-input {
+        color: $clear-grey;
+        font-family: $raleway-font;
+    }
+    & .MuiInputBase-root::before, .MuiInputBase-root::after {
+        border-bottom-color: $clear-grey !important;
+    }
+    & .MuiInputLabel-root {
+        color: $clear-grey;
+        font-family: $raleway-font;
+    }
+}
