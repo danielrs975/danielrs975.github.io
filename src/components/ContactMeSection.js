@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import ContactForm from './ContactForm';
 
 const ContactMeSection = () => {
@@ -21,8 +21,22 @@ const ContactMeSection = () => {
                         <h3>
                             Made with 
                             <FontAwesomeIcon icon={faHeart} className="page-info__love-icon" />
-                            by Daniel R
+                            by Daniel R, 2020
                         </h3>
+                        <div className="row social-medias--footer">
+                            <a href="https://github.com/danielrs975" 
+                                target="__blank" 
+                                className="social-medias__icon" 
+                            >
+                                <FontAwesomeIcon icon={faGithubSquare} size="2x" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/danielrs9705/" 
+                                target="__blank" 
+                                className="social-medias__icon"
+                            >
+                                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

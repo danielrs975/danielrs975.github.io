@@ -2,6 +2,12 @@
     justify-content: space-evenly;
 }
 
+.social-medias--footer {
+    .social-medias__icon {
+        margin: 0 $s-size;
+    }
+}
+
 .social-medias__icon {
     color: fade-out($color: $clear-grey, $amount: 0.3);
 }

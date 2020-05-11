@@ -30,7 +30,7 @@ export default class ContactForm extends React.Component {
     render() {
         return (
             <form className="contact-me__form" autoComplete="off" onSubmit={this.onSubmit}>
-                <TextField variant="filled" label="E-mail" value={this.state.email} onChange={this.onEmailChange} className="form-field" />
+                <TextField variant="filled" label="Your e-mail" value={this.state.email} onChange={this.onEmailChange} className="form-field" />
                 <TextField variant="filled" label="Subject" value={this.state.subject} onChange={this.onSubjectChange} className="form-field" />
                 <TextField variant="filled" label="Message" value={this.state.message} onChange={this.onMessageChange} className="form-field" />
                 <Button variant="contained" className="button button--sent">

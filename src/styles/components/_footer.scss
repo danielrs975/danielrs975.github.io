@@ -14,6 +14,7 @@
     h3 {
         font-family: $righteous-font;
         font-weight: 100;
+        margin: 0;
     }
 }
 
@@ -30,5 +31,8 @@
 @media (max-width: $desktop-breakpoint) {
     .footer__content {
         flex-direction: column;
+    }
+    .page-info {
+        padding: $xl-size 0;
     }
 }
