@@ -21,8 +21,8 @@ const Project = ({ project }) => {
                 <div className="project__links">
                     { project.repositories.map((repository) => (
                         <p>
-                            {repository.name} Repository: 
-                            <a href={repository.link}>
+                            {repository.name} : 
+                            <a href={repository.link} target="_blank">
                                 {repository.link}
                             </a>
                         </p>
