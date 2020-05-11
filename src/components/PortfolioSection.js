@@ -11,7 +11,7 @@ const PortfolioSection = () => {
                     <h2>PORTFOLIO</h2>
                 </div>
                 {
-                    projects.map((project) => (<Project project={project} />))
+                    projects.map((project, idx) => (<Project project={project} key={`project-${idx}`} />))
                 }
             </div>
         </div>

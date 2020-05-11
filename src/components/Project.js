@@ -19,10 +19,10 @@ const Project = ({ project }) => {
                     </p>
                 </div>
                 <div className="project__links">
-                    { project.repositories.map((repository) => (
-                        <p>
+                    { project.repositories.map((repository, idx) => (
+                        <p key={`link-${idx}`}>
                             {repository.name} : 
-                            <a href={repository.link} target="_blank">
+                            <a href={repository.link} target="_blank" rel="noopener noreferrer">
                                 {repository.link}
                             </a>
                         </p>

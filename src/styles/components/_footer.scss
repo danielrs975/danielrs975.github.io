@@ -31,8 +31,12 @@
 @media (max-width: $desktop-breakpoint) {
     .footer__content {
         flex-direction: column;
+        align-items: center;
     }
     .page-info {
         padding: $xl-size 0;
+    }
+    .contact-me {
+        width: 80%;
     }
 }
