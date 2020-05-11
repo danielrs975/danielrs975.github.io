@@ -1,6 +1,7 @@
 .project {
     align-items: center;
     justify-content: space-evenly;
+    padding: $xl-size;
 }
 
 .project__image {
@@ -44,6 +45,7 @@
 @media (max-width: $desktop-breakpoint) {
     .project {
         flex-direction: column;
+        padding: $m-size 0;
     }
     .project__image {
         width: 80%;
