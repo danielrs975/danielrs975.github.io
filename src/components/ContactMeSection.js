@@ -16,7 +16,7 @@ const ContactMeSection = () => {
                         <ContactForm />
                     </div>
                     <div className="page-info">
-                        <h3>Build with</h3>
+                        <h3>Built with</h3>
                         <FontAwesomeIcon icon={faReact} size="5x" />
                         <h3>
                             Made with 
