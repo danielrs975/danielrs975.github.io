@@ -39,6 +39,11 @@ const ContactMeSection = () => {
                         </div>
                     </div>
                 </div>
+                <div className="footer__app-versioning">
+                    <p>
+                        Portfolio app, Version 1.0. May 2020
+                    </p>
+                </div>
             </div>
         </div>
     )

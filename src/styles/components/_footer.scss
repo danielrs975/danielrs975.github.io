@@ -28,6 +28,12 @@
     @extend .row;
 }
 
+.footer__app-versioning {
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-align: center;
+}
+
 @media (max-width: $desktop-breakpoint) {
     .footer__content {
         flex-direction: column;
