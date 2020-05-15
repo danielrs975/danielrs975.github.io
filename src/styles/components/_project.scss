@@ -36,6 +36,7 @@
     padding: $m-size 0;
     p {
         font-size: $font-size-small;
+        word-break: break-all;
     }
     a {
         margin: 0 0.5rem;
