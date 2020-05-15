@@ -6,6 +6,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
+// Images
+import MyIcon from '../images/danielSprite.png';
+
 const NavBar = () => {
 	return (
 		<header className="navbar">
@@ -13,7 +16,7 @@ const NavBar = () => {
 				<div className="navbar__content">
 					<div className="brand">
 						<div className="brand__image">
-							<img src="/images/danielSprite.png" alt="face-icon" />
+							<img src={MyIcon} alt="face-icon" />
 						</div>
 						<div className="brand__name show-for-desktop">
 							<h1>DANIEL RODRIGUEZ</h1>

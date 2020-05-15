@@ -6,6 +6,7 @@ import SkillBox from './SkillBox';
 
 // My Info
 import profile from '../fixtures/profile';
+import foto from '../images/foto.png';
 
 const AboutMeSection = () => {
     return (
@@ -16,7 +17,7 @@ const AboutMeSection = () => {
                 </div>
                 <div className="row about-me__content">
                     <div className="about-me__photo center">
-                        <img src="/images/foto.png" alt="me" />
+                        <img src={foto} alt="me" />
                     </div>
                     <div className="about-me__bio center">
                        <p>
