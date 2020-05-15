@@ -1,16 +1,20 @@
 .project {
     align-items: center;
     justify-content: space-evenly;
-    padding: $xl-size 0;
+    padding: $l-size 0;
 }
 
 .project__image {
     width: 50%;
     text-align: center;
+    img {
+        width: 100%;
+    }
 }
 
 .project__content {
     width: 50%;
+    padding: 0 $m-size;
     p {
         margin: 0;
     }

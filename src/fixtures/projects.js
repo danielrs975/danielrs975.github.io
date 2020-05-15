@@ -6,7 +6,7 @@
      {
         name: 'Join-Code',
         date: 'December, 2019 - January, 2020',
-        description: 'Made as part of an university subject called "Groupware and Collaborative Work". Consists of a online text editor where you can write code and share it with other users. These users can edit at the same time the same document, they can develop different part of the code in real-time. The project is divided in two parts: the front-end made in Angular and the back-end made in Node.',
+        description: 'Made as part of an university subject called "Groupware and Collaborative Work", built by a team of three people. Consists of a online text editor where you can write code and share it with other users. These users can edit at the same time the same document, they can develop different part of the code in real-time. The project is divided in two parts: the front-end made in Angular and the back-end made in Node.',
         repositories: [
             {
                 link: 'https://github.com/danielrs975/join-code-frontend',
@@ -16,7 +16,11 @@
                 link: 'https://github.com/danielrs975/join-code-backend',
                 name: 'Back-End Repository'
             }
-        ]
+        ],
+        image: {
+            link: '/images/joincode.PNG',
+            alt: 'joincode-interface'
+        }
      },
      {
         name: 'Expensify App',

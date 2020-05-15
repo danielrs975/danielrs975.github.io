@@ -6,7 +6,7 @@ const Project = ({ project }) => {
     return (
         <div className="row project">
             <div className="project__image">
-                Some image of the project
+                {project.image && <img src={project.image.link} alt={project.image.alt} />}
             </div>
             <div className="column project__content">
                 <div className="project__header">
