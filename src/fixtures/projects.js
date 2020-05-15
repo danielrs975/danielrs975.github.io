@@ -36,17 +36,21 @@
                 name: 'Udemy Cours'
 
             }
-        ]
+        ],
+        image: {
+            link: '/images/expensifyapp.PNG',
+            alt: 'expensify-app'
+        }
      },
-     {
-        name: 'SIP Software',
-        date: 'April, 2018 - July, 2018',
-        description: 'Application built for an university subject called "Software Engineering". The objective of the development of this, was to teach the SCRUM methodology to build software. The application consists of a system to manage the inscription of students in a Master Program. I was part of a group to develop this project.',
-        repositories: [
-            {
-                link: 'https://github.com/german1608/sip-software',
-                name: 'Repository'
-            },
-        ]
-     }
+    //  {
+    //     name: 'SIP Software',
+    //     date: 'April, 2018 - July, 2018',
+    //     description: 'Application built for an university subject called "Software Engineering". The objective of the development of this, was to teach the SCRUM methodology to build software. The application consists of a system to manage the inscription of students in a Master Program. I was part of a group to develop this project.',
+    //     repositories: [
+    //         {
+    //             link: 'https://github.com/german1608/sip-software',
+    //             name: 'Repository'
+    //         },
+    //     ]
+    //  }
 ]

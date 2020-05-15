@@ -1,8 +1,11 @@
 import React from 'react'
 
 // Icons
-import { faAngular, faReact, faNode, faPython, faHtml5, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faReact, faNode, faPython, faHtml5, faSass, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import SkillBox from './SkillBox';
+
+// My Info
+import profile from '../fixtures/profile';
 
 const AboutMeSection = () => {
     return (
@@ -17,13 +20,7 @@ const AboutMeSection = () => {
                     </div>
                     <div className="about-me__bio center">
                        <p>
-                            Today, I am a MSc Student in Computer Science at Télécom SudParis, France.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
+                            {profile.bio}
                        </p>
                     </div>
                 </div>
@@ -40,6 +37,7 @@ const AboutMeSection = () => {
                     <div className="row evenly-distributed skills">
                         <SkillBox icon={faHtml5} level={5} />
                         <SkillBox icon={faSass} level={3} />
+                        <SkillBox icon={faGitAlt} level={4} />
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 
 const ContactMeSection = () => {
     return (
-        <div id="contactMe" className="section section--contact-me">
+        <div id="contact" className="section section--contact-me">
             <div className="content-container">
                 <div className="evenly-distributed footer__content">
                     <div className="contact-me">
