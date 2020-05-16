@@ -1,10 +1,10 @@
 module.exports = {
     name: 'Daniel Rodriguez',
-    bio: 'Hi, I am a MSc student at Télécom SudParis, France. I am doing an exchange program \
-    with this university, my home college is Simón Bolívar University, Venezuela. I am pursuing a Computer Engineering career (Venezuela)\
-    with a specialization in Computer Science for Communication Networks (France). I really like my career, I am specially interested\
-    in the Software Engineering area. I have some experience in that area, back in Venezuela I worked for a year as a JavaScript FullStack Developer.\
-    I was involved in two projects, both of them built with NodeJS and Angular that is why I have some experience with those tools. \
-    It was a really fun experience because it let me know a little how is the Software Development world and I liked it. \
-    I would like that my next works experiences let me learn more about software design, testing, development tools, among other things.'
+    // eslint-disable-next-line
+    bio: "Hi, I am a Double Degree Student pursuing a master's degree in Computer Science for Computer Networks at Télécom SudParis, France and \
+    Computer Engineering degree at Universidad Simon Bolivar, Venezuela. I am very interested in Software Engineering. I was fortunate to have had industry \
+    experience early on my career. For a year, I worked as a JavaScript FullStack Developer using NodeJS and Angular 9 to build two projects: one that consists of \
+    a social network to make bets in certain events, for example soccer. This app allows you to create groups with your friends and make bets for a specific event. \
+    The second app was a system to help accountants to manage the company they are in charge of. I am currently forward to delving further into Engineering \
+    of bigger and more impactful systems for which I would like for my next projects to allow to learn more about software design, testing, and development tools."
 }
