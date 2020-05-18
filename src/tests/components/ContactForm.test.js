@@ -16,6 +16,9 @@ test('should render ContactForm correctly', () => {
     expect(wrapper).toMatchSnapshot();
 });
 
-test('should show error message if a field is missing', () => {
-
+test('should show a required message if the fields are empty', () => {
+    wrapper.find('form').simulate('submit', {
+        preventDefault: () => {}
+    });
+    expect(wrapper).toMatchSnapshot();
 })

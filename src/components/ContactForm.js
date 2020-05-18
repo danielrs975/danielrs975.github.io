@@ -9,7 +9,8 @@ export default class ContactForm extends React.Component {
     state = {
         email: '',
         subject: '',
-        message: ''
+        message: '',
+        errorEmail: ''
     }
     onEmailChange = (e) => {
         const email = e.target.value;
@@ -25,15 +26,61 @@ export default class ContactForm extends React.Component {
     }
     onSubmit = (e) => {
         e.preventDefault();
+        let errorEmail = '', errorSubject = '', errorMessage = '';
+        if (!this.state.email) {
+            errorEmail = 'This field is required';
+            this.setState({ errorEmail });
+        }
+        if (!this.state.errorSubject) {
+            errorSubject = 'This field is required';
+            this.setState({ errorSubject });
+        }
+        if (!this.state.errorMessage) {
+            errorMessage = 'This field is required';
+            this.setState({ errorMessage });
+        }
+
+        if (!errorEmail && !errorSubject && !errorMessage) {
+            this.setState({
+                errorEmail,
+                errorSubject,
+                errorMessage
+            });
+            console.log('Sending message: ', this.state);
+        }
     }
 
     render() {
         return (
-            <form className="contact-me__form" autoComplete="off" onSubmit={this.onSubmit}>
-                <TextField variant="filled" label="Your e-mail" value={this.state.email} onChange={this.onEmailChange} className="form-field" />
-                <TextField variant="filled" label="Subject" value={this.state.subject} onChange={this.onSubjectChange} className="form-field" />
-                <TextField variant="filled" label="Message" value={this.state.message} onChange={this.onMessageChange} className="form-field" />
-                <Button variant="contained" className="button button--sent">
+            <form className="contact-me__form" onSubmit={this.onSubmit}>
+                <TextField
+                    error={!!this.state.errorEmail}
+                    variant="filled" 
+                    label="Your e-mail" 
+                    value={this.state.email} 
+                    onChange={this.onEmailChange} 
+                    className="form-field"
+                    helperText={this.state.errorEmail}
+                />
+                <TextField
+                    error={!!this.state.errorSubject} 
+                    variant="filled" 
+                    label="Subject" 
+                    value={this.state.subject} 
+                    onChange={this.onSubjectChange} 
+                    className="form-field" 
+                    helperText={this.state.errorSubject}
+                />
+                <TextField
+                    error={!!this.state.errorMessage}
+                    variant="filled" 
+                    label="Message" 
+                    value={this.state.message} 
+                    onChange={this.onMessageChange} 
+                    className="form-field"
+                    helperText={this.state.errorMessage}
+                />
+                <Button type="submit" variant="contained" className="button button--sent">
                     <FontAwesomeIcon icon={faPaperPlane} size="lg" />
                     <p>Sent</p>
                 </Button>
