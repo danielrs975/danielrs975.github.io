@@ -13,3 +13,9 @@
         font-family: $raleway-font;
     }
 }
+
+.error {
+    & .MuiInputBase-root::before, .MuiInputBase-root::after {
+        border-bottom-color: red !important;
+    }
+}

@@ -3219,7 +3219,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <ForwardRef(WithStyles)
-          className="form-field"
+          className="form-field error"
           error={true}
           helperText="This field is required"
           label="Your e-mail"
@@ -3228,7 +3228,7 @@ ShallowWrapper {
           variant="filled"
         />,
         <ForwardRef(WithStyles)
-          className="form-field"
+          className="form-field error"
           error={true}
           helperText="This field is required"
           label="Subject"
@@ -3237,7 +3237,7 @@ ShallowWrapper {
           variant="filled"
         />,
         <ForwardRef(WithStyles)
-          className="form-field"
+          className="form-field error"
           error={true}
           helperText="This field is required"
           label="Message"
@@ -3296,7 +3296,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "className": "form-field",
+          "className": "form-field error",
           "error": true,
           "helperText": "This field is required",
           "label": "Your e-mail",
@@ -3654,7 +3654,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "className": "form-field",
+          "className": "form-field error",
           "error": true,
           "helperText": "This field is required",
           "label": "Subject",
@@ -4012,7 +4012,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "className": "form-field",
+          "className": "form-field error",
           "error": true,
           "helperText": "This field is required",
           "label": "Message",
@@ -4797,7 +4797,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <ForwardRef(WithStyles)
-            className="form-field"
+            className="form-field error"
             error={true}
             helperText="This field is required"
             label="Your e-mail"
@@ -4806,7 +4806,7 @@ ShallowWrapper {
             variant="filled"
           />,
           <ForwardRef(WithStyles)
-            className="form-field"
+            className="form-field error"
             error={true}
             helperText="This field is required"
             label="Subject"
@@ -4815,7 +4815,7 @@ ShallowWrapper {
             variant="filled"
           />,
           <ForwardRef(WithStyles)
-            className="form-field"
+            className="form-field error"
             error={true}
             helperText="This field is required"
             label="Message"
@@ -4874,7 +4874,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "className": "form-field",
+            "className": "form-field error",
             "error": true,
             "helperText": "This field is required",
             "label": "Your e-mail",
@@ -5232,7 +5232,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "className": "form-field",
+            "className": "form-field error",
             "error": true,
             "helperText": "This field is required",
             "label": "Subject",
@@ -5590,7 +5590,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "className": "form-field",
+            "className": "form-field error",
             "error": true,
             "helperText": "This field is required",
             "label": "Message",

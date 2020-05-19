@@ -80,7 +80,7 @@ export default class ContactForm extends React.Component {
                     label="Your e-mail" 
                     value={this.state.email} 
                     onChange={this.onEmailChange} 
-                    className="form-field"
+                    className={!!this.state.errorEmail? 'form-field error': 'form-field'}
                     helperText={this.state.errorEmail}
                 />
                 <TextField
@@ -89,7 +89,7 @@ export default class ContactForm extends React.Component {
                     label="Subject" 
                     value={this.state.subject} 
                     onChange={this.onSubjectChange} 
-                    className="form-field" 
+                    className={!!this.state.errorSubject? 'form-field error': 'form-field'} 
                     helperText={this.state.errorSubject}
                 />
                 <TextField
@@ -98,7 +98,7 @@ export default class ContactForm extends React.Component {
                     label="Message" 
                     value={this.state.message} 
                     onChange={this.onMessageChange} 
-                    className="form-field"
+                    className={!!this.state.errorMessage? 'form-field error': 'form-field'}
                     helperText={this.state.errorMessage}
                 />
                 <Button type="submit" variant="contained" className="button button--sent">
