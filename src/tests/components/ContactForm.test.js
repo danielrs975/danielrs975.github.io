@@ -21,4 +21,4 @@ test('should show a required message if the fields are empty', () => {
         preventDefault: () => {}
     });
     expect(wrapper).toMatchSnapshot();
-})
+});

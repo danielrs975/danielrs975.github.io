@@ -1,53 +1,74 @@
 import React from 'react'
+import validator from 'validator';
 import Button from '@material-ui/core/Button';
 import { TextField } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
+import error from '../fixtures/errorMessages';
+
 export default class ContactForm extends React.Component {
     state = {
         email: '',
         subject: '',
         message: '',
-        errorEmail: ''
+        errorEmail: '',
+        errorSubject: '',
+        errorMessage: ''
+    }
+    validateEmail = () => {
+        let errorMsg = '';
+        if (!this.state.email) {
+            errorMsg = error.required;
+        } else if (!validator.isEmail(this.state.email)) {
+            errorMsg = error.badEmail;
+        }
+        return errorMsg;
+    }
+    validateSubject = () => {
+        let errorMsg = '';
+        if (!this.state.subject) {
+            errorMsg = error.required;
+        }
+        return errorMsg;
+    }
+    validateMessage = () => {
+        let errorMsg = '';
+        if (!this.state.message) {
+            errorMsg = error.required;
+        }
+        return errorMsg;
     }
     onEmailChange = (e) => {
         const email = e.target.value;
-        this.setState({ email });
+        const errorEmail = '';
+        this.setState({ email, errorEmail });
     }
     onSubjectChange = (e) => {
         const subject = e.target.value;
-        this.setState({ subject });
+        const errorSubject = '';
+        this.setState({ subject, errorSubject });
     }
     onMessageChange = (e) => {
         const message = e.target.value;
-        this.setState({ message });
+        const errorMessage = ''
+        this.setState({ message, errorMessage });
     }
     onSubmit = (e) => {
         e.preventDefault();
-        let errorEmail = '', errorSubject = '', errorMessage = '';
-        if (!this.state.email) {
-            errorEmail = 'This field is required';
-            this.setState({ errorEmail });
-        }
-        if (!this.state.errorSubject) {
-            errorSubject = 'This field is required';
-            this.setState({ errorSubject });
-        }
-        if (!this.state.errorMessage) {
-            errorMessage = 'This field is required';
-            this.setState({ errorMessage });
-        }
-
+        const errorEmail = this.validateEmail();
+        const errorSubject = this.validateSubject();
+        const errorMessage = this.validateMessage();
+        
         if (!errorEmail && !errorSubject && !errorMessage) {
-            this.setState({
-                errorEmail,
-                errorSubject,
-                errorMessage
-            });
             console.log('Sending message: ', this.state);
         }
+        this.setState({
+            errorEmail,
+            errorSubject,
+            errorMessage
+        });
     }
 
     render() {

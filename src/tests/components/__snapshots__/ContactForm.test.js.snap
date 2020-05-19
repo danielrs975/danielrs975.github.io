@@ -31,6 +31,7 @@ ShallowWrapper {
         <ForwardRef(WithStyles)
           className="form-field"
           error={false}
+          helperText=""
           label="Subject"
           onChange={[Function]}
           value=""
@@ -39,6 +40,7 @@ ShallowWrapper {
         <ForwardRef(WithStyles)
           className="form-field"
           error={false}
+          helperText=""
           label="Message"
           onChange={[Function]}
           value=""
@@ -455,7 +457,7 @@ ShallowWrapper {
         "props": Object {
           "className": "form-field",
           "error": false,
-          "helperText": undefined,
+          "helperText": "",
           "label": "Subject",
           "onChange": [Function],
           "value": "",
@@ -813,7 +815,7 @@ ShallowWrapper {
         "props": Object {
           "className": "form-field",
           "error": false,
-          "helperText": undefined,
+          "helperText": "",
           "label": "Message",
           "onChange": [Function],
           "value": "",
@@ -1607,6 +1609,7 @@ ShallowWrapper {
           <ForwardRef(WithStyles)
             className="form-field"
             error={false}
+            helperText=""
             label="Subject"
             onChange={[Function]}
             value=""
@@ -1615,6 +1618,7 @@ ShallowWrapper {
           <ForwardRef(WithStyles)
             className="form-field"
             error={false}
+            helperText=""
             label="Message"
             onChange={[Function]}
             value=""
@@ -2031,7 +2035,7 @@ ShallowWrapper {
           "props": Object {
             "className": "form-field",
             "error": false,
-            "helperText": undefined,
+            "helperText": "",
             "label": "Subject",
             "onChange": [Function],
             "value": "",
@@ -2389,7 +2393,7 @@ ShallowWrapper {
           "props": Object {
             "className": "form-field",
             "error": false,
-            "helperText": undefined,
+            "helperText": "",
             "label": "Message",
             "onChange": [Function],
             "value": "",
