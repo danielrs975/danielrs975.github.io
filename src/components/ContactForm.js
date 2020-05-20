@@ -3,6 +3,7 @@ import validator from 'validator';
 import Button from '@material-ui/core/Button';
 import { TextField } from '@material-ui/core';
 import { toast } from 'react-toastify';
+import emailjs from 'emailjs-com';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -63,10 +64,22 @@ export default class ContactForm extends React.Component {
         const errorMessage = this.validateMessage();
         
         if (!errorEmail && !errorSubject && !errorMessage) {
-            console.log('Sending message: ', this.state);
-            toast.success('Message sent. Thank you for you interest in me. I will reply as soon as I can :)', {
-                position: toast.POSITION.TOP_RIGHT
-            })
+            const emailMsg = {
+                email: this.state.email,
+                subject: this.state.subject,
+                message: this.state.message
+            }
+            emailjs.send('gmail', 'developer_offer', emailMsg, 'user_XzEsLkP8VJoSA6Hs4rtB2').then(
+                () => {
+                    toast.success('Message sent. Thank you for you interest in me. I will reply as soon as I can :)', {
+                        position: toast.POSITION.TOP_RIGHT
+                    })
+                },
+                () => {
+                    toast.error('Message not sent :(. Try again later');
+                }
+            )
+            
             this.setState({
                 email: '',
                 subject: '',
