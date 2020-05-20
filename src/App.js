@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { ToastContainer } from 'react-toastify';
 // Components
 import NavBar from './components/NavBar';
 import WelcomeSection from './components/WelcomeSection';
@@ -16,6 +16,8 @@ class App extends Component {
 				<AboutMeSection />
 				<PortfolioSection />
 				<ContactMeSection />
+				{/* The notification toast */}
+                <ToastContainer autoClose={3000} />
 			</div>
 		);
 	}

@@ -4,13 +4,16 @@
         font-weight: 100;
     }
 }
-
+.contact-me {
+    width: 50%;
+}
 .page-info {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 50%;
     h3 {
         font-family: $righteous-font;
         font-weight: 100;
@@ -41,6 +44,7 @@
     }
     .page-info {
         padding: $xl-size 0;
+        width: 80%;
     }
     .contact-me {
         width: 80%;

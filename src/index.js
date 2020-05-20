@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 
 // Styles
 import 'normalize.css/normalize.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './styles/styles.scss';
 
 ReactDOM.render(<App />, document.getElementById('root'));

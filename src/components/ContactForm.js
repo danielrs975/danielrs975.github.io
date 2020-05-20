@@ -2,8 +2,9 @@ import React from 'react'
 import validator from 'validator';
 import Button from '@material-ui/core/Button';
 import { TextField } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { toast } from 'react-toastify';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import error from '../fixtures/errorMessages';
@@ -63,6 +64,14 @@ export default class ContactForm extends React.Component {
         
         if (!errorEmail && !errorSubject && !errorMessage) {
             console.log('Sending message: ', this.state);
+            toast.success('Message sent. Thank you for you interest in me. I will reply as soon as I can :)', {
+                position: toast.POSITION.TOP_RIGHT
+            })
+            this.setState({
+                email: '',
+                subject: '',
+                message: ''
+            });
         }
         this.setState({
             errorEmail,
