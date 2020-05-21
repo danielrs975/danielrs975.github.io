@@ -17,7 +17,7 @@ class App extends Component {
 				<PortfolioSection />
 				<ContactMeSection />
 				{/* The notification toast */}
-                <ToastContainer autoClose={3000} />
+				<ToastContainer autoClose={3000} />
 			</div>
 		);
 	}
