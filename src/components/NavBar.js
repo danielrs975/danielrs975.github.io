@@ -5,7 +5,7 @@ navigation bar component
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import Drawer from '@material-ui/core/Drawer';
 // Images
 import MyIcon from '../images/danielSprite.png';
 import Scrollspy from 'react-scrollspy';
@@ -34,6 +34,14 @@ const NavBar = () => {
 						</div>
 						<div className="show-for-mobile">
 							<FontAwesomeIcon icon={faBars} size="lg"/>
+							<Drawer
+								className="drawer"
+								variant="persistent"
+								anchor="right"
+								open={true}
+							>
+								Hola
+							</Drawer>
 						</div>
 					</div>
 				</div>
