@@ -8,8 +8,16 @@
     & .MuiInputBase-root::before, .MuiInputBase-root::after {
         border-bottom-color: $clear-grey !important;
     }
+    & .MuiInputBase-input {
+        font-size: $font-size-xsmall;
+    }
     & .MuiInputLabel-root {
         color: $clear-grey;
+        font-family: $raleway-font;
+        font-size: $font-size-xsmall;
+    }
+    & .MuiFormHelperText-contained {
+        font-size: 1.1rem;
         font-family: $raleway-font;
     }
 }
