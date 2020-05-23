@@ -34,7 +34,14 @@
 }
 
 .drawer {
+	display: flex;
 	& .MuiPaper-root {
+		color: $clear-grey !important;
+		background: $dark-blue;
 		width: 65%;
+		padding: $m-size;
+		a {
+			color: $clear-grey !important;
+		}
 	}
 }
