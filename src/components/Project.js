@@ -1,12 +1,14 @@
 import React from 'react'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faAngular, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 const Project = ({ project }) => {
     return (
         <div className="row project">
             <div className="project__image">
                 {project.image && <img src={project.image.link} alt={project.image.alt} />}
+                {!project.image && <FontAwesomeIcon icon={faBriefcase} size="9x" className="work-icon" />}
             </div>
             <div className="column project__content">
                 <div className="project__header">
@@ -19,7 +21,7 @@ const Project = ({ project }) => {
                     </p>
                 </div>
                 <div className="project__links">
-                    { project.repositories.map((repository, idx) => (
+                    { project.repositories && project.repositories.map((repository, idx) => (
                         <p key={`link-${idx}`}>
                             {repository.name} : 
                             <a href={repository.link} target="_blank" rel="noopener noreferrer">

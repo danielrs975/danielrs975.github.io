@@ -51,6 +51,34 @@ export default [
             alt: 'expensify-app'
         }
     },
+    {
+        name: 'Quipus App',
+        date: 'February, 2019 - June, 2019',
+        // eslint-disable-next-line
+        description: 'It was my first project at my workplace, Pana Technologies. Quipus is a betting application that allows the users \
+                to create groups with his friends to bet in a specific events. These events are from sports to competitions like the oscars. \
+                This application was made with Angular for the front-end and NodeJS for the back-end.',
+        repositories: [
+            {
+                link: 'https://www.linkedin.com/in/pana-tech-80b49314b/',
+                name: 'Linkedin of Pana'
+            }
+        ]
+    },
+    {
+        name: 'Summer App',
+        date: 'September, 2019 - December, 2019',
+        // eslint-disable-next-line
+        description: 'Second project at Pana Technologies. Summer is an app that helps accountants to access the information of the organisations \
+                they manage. The informations of the companies come from the Xero API, an application for accountants. Summer is written in JavaScript: Angular \
+                for the front-end and NodeJS for the back-end.',
+        repositories: [
+            {
+                link: 'https://www.linkedin.com/in/pana-tech-80b49314b/',
+                name: 'Linkedin of Pana'
+            }
+        ]
+    }
     //  {
     //     name: 'SIP Software',
     //     date: 'April, 2018 - July, 2018',
