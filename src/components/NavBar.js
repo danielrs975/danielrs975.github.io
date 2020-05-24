@@ -6,6 +6,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import Drawer from '@material-ui/core/Drawer';
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 // Images
 import MyIcon from '../images/danielSprite.png';
 import Scrollspy from 'react-scrollspy';
@@ -38,6 +42,9 @@ export default class NavBar extends React.Component {
 									<a href="#aboutMe">About Me</a>
 									<a href="#portfolio">Portfolio</a>
 									<a href="#contact">Contact Me</a>
+									<Button aria-controls="simple-menu" aria-haspopup="true" className="navbar__button">
+										English
+									</Button>
 								</Scrollspy>
 							</div>
 							<div className="show-for-mobile">
