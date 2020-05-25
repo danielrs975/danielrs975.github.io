@@ -17,3 +17,19 @@
 .button--sent {
     width: 100% !important;
 }
+
+.button--navbar {
+    & .MuiButton-label {
+        color: $clear-grey;
+        font-family: $righteous-font;
+        font-size: $font-size-xlarge;
+    }
+    // padding: 0 !important;
+    // line-height: 0 !important;
+    vertical-align: baseline !important;
+    text-transform: none !important;
+    height: 3rem !important;
+    letter-spacing: 0 !important;
+    padding: 0 0.5rem !important;
+    min-width: unset !important;
+}

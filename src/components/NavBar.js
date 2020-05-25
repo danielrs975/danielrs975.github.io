@@ -16,7 +16,16 @@ import Scrollspy from 'react-scrollspy';
 
 export default class NavBar extends React.Component {
 	state = {
-		isOpen: false
+		isOpen: false,
+		openLM: null // This is for toggle the menu with the different languages
+	}
+	openLanguageMenu = (e) => {
+		const openLM = e.currentTarget;
+		this.setState({ openLM });
+	}
+	closeLanguageMenu = () => {
+		const openLM = null;
+		this.setState({ openLM });
 	}
 	toggleMenu = (e) => {
 		const isOpen = !this.state.isOpen;
@@ -42,9 +51,25 @@ export default class NavBar extends React.Component {
 									<a href="#aboutMe">About Me</a>
 									<a href="#portfolio">Portfolio</a>
 									<a href="#contact">Contact Me</a>
-									<Button aria-controls="simple-menu" aria-haspopup="true" className="navbar__button">
+									<Button 
+										aria-controls="simple-menu" 
+										aria-haspopup="true" 
+										className="button--navbar" 
+										onClick={this.openLanguageMenu}
+									>
 										English
 									</Button>
+									<Menu
+										id="simple-menu"
+										anchorEl={this.state.openLM}
+										keepMounted
+										open={Boolean(this.state.openLM)}
+										onClose={this.closeLanguageMenu}
+									>
+										<MenuItem onClick={this.closeLanguageMenu}>English</MenuItem>
+										<MenuItem onClick={this.closeLanguageMenu}>Spanish</MenuItem>
+										<MenuItem onClick={this.closeLanguageMenu}>French</MenuItem>
+									</Menu>
 								</Scrollspy>
 							</div>
 							<div className="show-for-mobile">
