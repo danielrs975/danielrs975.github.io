@@ -17,7 +17,8 @@ import Scrollspy from 'react-scrollspy';
 export default class NavBar extends React.Component {
 	state = {
 		isOpen: false,
-		openLM: null // This is for toggle the menu with the different languages
+		openLM: null, // This is for toggle the menu with the different languages
+		languageSelected: 'English'
 	}
 	openLanguageMenu = (e) => {
 		const openLM = e.currentTarget;
@@ -57,7 +58,7 @@ export default class NavBar extends React.Component {
 										className="button--navbar" 
 										onClick={this.openLanguageMenu}
 									>
-										English
+										{this.state.languageSelected}
 										<FontAwesomeIcon icon={faCaretDown} className="menu-icon" />
 									</Button>
 									<Menu
