@@ -33,6 +33,18 @@
 	}
 }
 
+.language-menu {
+	& .MuiPaper-root {
+		background: $dark-blue;
+		color: $clear-grey;
+		width: 10rem;
+	}
+	& .MuiListItem-root {
+		font-family: $righteous-font;
+		font-size: 1.7rem;
+	}
+}
+
 .drawer {
 	display: flex;
 	& .MuiPaper-root {

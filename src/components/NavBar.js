@@ -4,7 +4,7 @@ navigation bar component
  */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimesCircle, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
@@ -58,6 +58,7 @@ export default class NavBar extends React.Component {
 										onClick={this.openLanguageMenu}
 									>
 										English
+										<FontAwesomeIcon icon={faCaretDown} className="menu-icon" />
 									</Button>
 									<Menu
 										id="simple-menu"
@@ -65,6 +66,7 @@ export default class NavBar extends React.Component {
 										keepMounted
 										open={Boolean(this.state.openLM)}
 										onClose={this.closeLanguageMenu}
+										className="language-menu"
 									>
 										<MenuItem onClick={this.closeLanguageMenu}>English</MenuItem>
 										<MenuItem onClick={this.closeLanguageMenu}>Spanish</MenuItem>
