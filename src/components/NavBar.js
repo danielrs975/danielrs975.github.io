@@ -13,6 +13,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 // Images
 import MyIcon from '../images/danielSprite.png';
 import Scrollspy from 'react-scrollspy';
+import { Link } from 'react-router-dom';
 
 export default class NavBar extends React.Component {
 	state = {
@@ -58,7 +59,7 @@ export default class NavBar extends React.Component {
 										className="button--navbar" 
 										onClick={this.openLanguageMenu}
 									>
-										{this.state.languageSelected}
+										{this.props.lang}
 										<FontAwesomeIcon icon={faCaretDown} className="menu-icon" />
 									</Button>
 									<Menu
@@ -69,9 +70,15 @@ export default class NavBar extends React.Component {
 										onClose={this.closeLanguageMenu}
 										className="language-menu"
 									>
-										<MenuItem onClick={this.closeLanguageMenu}>English</MenuItem>
-										<MenuItem onClick={this.closeLanguageMenu}>Spanish</MenuItem>
-										<MenuItem onClick={this.closeLanguageMenu}>French</MenuItem>
+										<MenuItem onClick={this.closeLanguageMenu}>
+											<Link to="en" className="link">English</Link>
+										</MenuItem>
+										<MenuItem onClick={this.closeLanguageMenu}>
+											<Link to="es" className="link">Spanish</Link>
+										</MenuItem>
+										<MenuItem onClick={this.closeLanguageMenu}>
+											<Link to="fr" className="link">French</Link>	
+										</MenuItem>
 									</Menu>
 								</Scrollspy>
 							</div>

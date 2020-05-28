@@ -12,9 +12,7 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <Route path="/" component={App} exact={true} />
-                <Route path="/en" component={App} exact={true} />
-                <Route path="/es" component={App} exact={true} />
-                <Route path="/fr" component={App} exact={true} />
+                <Route path="/:lang" component={App} exact={true} />
             </Switch>
         </div>
     </Router>
