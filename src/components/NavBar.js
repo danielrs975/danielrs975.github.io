@@ -24,7 +24,7 @@ export default class NavBar extends React.Component {
 		const openLM = e.currentTarget;
 		this.setState({ openLM });
 	}
-	closeLanguageMenu = () => {
+	closeLanguageMenu = (e) => {
 		const openLM = null;
 		this.setState({ openLM });
 	}
