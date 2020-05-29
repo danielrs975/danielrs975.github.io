@@ -10,7 +10,7 @@ import ContactMeSection from './components/ContactMeSection';
 class App extends Component {
 	constructor(props) {
 		super(props);
-		const lang = !props.match.params.lang? 'eng': props.match.params.lang;
+		const lang = !props.match.params.lang? 'en': props.match.params.lang;
 		// console.log(lang in ['en', 'es', 'fr'], lang)
 		if (!(lang in ['en', 'es', 'fr'])) {
 			// Send to the 404 page

@@ -4,7 +4,7 @@ navigation bar component
  */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimesCircle, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimesCircle, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
@@ -14,6 +14,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MyIcon from '../images/danielSprite.png';
 import Scrollspy from 'react-scrollspy';
 import { Link } from 'react-router-dom';
+
+import translation from '../fixtures/menu';
 
 export default class NavBar extends React.Component {
 	state = {
@@ -49,18 +51,18 @@ export default class NavBar extends React.Component {
 						<div className="navbar__menu">
 							<div className="show-for-desktop">
 								<Scrollspy items={['home', 'aboutMe', 'portfolio', 'contact']} currentClassName="active">
-									<a href="#home">Home</a>
-									<a href="#aboutMe">About Me</a>
-									<a href="#portfolio">Portfolio</a>
-									<a href="#contact">Contact Me</a>
+									<a href="#home">{translation[this.props.lang][0]}</a>
+									<a href="#aboutMe">{translation[this.props.lang][1]}</a>
+									<a href="#portfolio">{translation[this.props.lang][2]}</a>
+									<a href="#contact">{translation[this.props.lang][3]}</a>
 									<Button 
 										aria-controls="simple-menu" 
 										aria-haspopup="true" 
 										className="button--navbar" 
 										onClick={this.openLanguageMenu}
 									>
+										<FontAwesomeIcon icon={faGlobeAmericas} className="menu-icon" size="sm" />
 										{this.props.lang}
-										<FontAwesomeIcon icon={faCaretDown} className="menu-icon" />
 									</Button>
 									<Menu
 										id="simple-menu"
