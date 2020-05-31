@@ -7,13 +7,14 @@ import SkillBox from './SkillBox';
 // My Info
 import profile from '../fixtures/profile';
 import foto from '../images/foto.png';
+import translation from '../translations/AboutMeSection';
 
-const AboutMeSection = () => {
+const AboutMeSection = (props) => {
     return (
         <div id="aboutMe" className="section">
             <div className="content-container">
                 <div className="section__header">
-                    <h2>ABOUT ME</h2>
+                    <h2>{translation[props.lang].section}</h2>
                 </div>
                 <div className="row about-me__content">
                     <div className="about-me__photo center">
@@ -21,7 +22,7 @@ const AboutMeSection = () => {
                     </div>
                     <div className="about-me__bio center">
                        <p>
-                            {profile.bio}
+                            {translation[props.lang].bio}
                        </p>
                     </div>
                 </div>

@@ -31,7 +31,7 @@ class App extends Component {
 			<div className="App">
 				<NavBar lang={this.state.lang} />
 				<WelcomeSection lang={this.state.lang} />
-				<AboutMeSection />
+				<AboutMeSection lang={this.state.lang} />
 				<PortfolioSection />
 				<ContactMeSection />
 				{/* The notification toast */}
