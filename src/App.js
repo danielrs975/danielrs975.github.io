@@ -30,7 +30,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<NavBar lang={this.state.lang} />
-				<WelcomeSection />
+				<WelcomeSection lang={this.state.lang} />
 				<AboutMeSection />
 				<PortfolioSection />
 				<ContactMeSection />
