@@ -55,7 +55,7 @@ export default class NavBar extends React.Component {
 									<a href="#aboutMe">{translation[this.props.lang][1]}</a>
 									<a href="#portfolio">{translation[this.props.lang][2]}</a>
 									<a href="#contact">{translation[this.props.lang][3]}</a>
-									<Button 
+									{/* <Button 
 										aria-controls="simple-menu" 
 										aria-haspopup="true" 
 										className="button--navbar" 
@@ -81,7 +81,7 @@ export default class NavBar extends React.Component {
 										<MenuItem onClick={this.closeLanguageMenu}>
 											<Link to="fr" className="link">French</Link>	
 										</MenuItem>
-									</Menu>
+									</Menu> */}
 								</Scrollspy>
 							</div>
 							<div className="show-for-mobile">
