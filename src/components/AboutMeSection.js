@@ -5,7 +5,6 @@ import { faAngular, faReact, faNode, faPython, faHtml5, faSass, faGitAlt } from 
 import SkillBox from './SkillBox';
 
 // My Info
-import profile from '../fixtures/profile';
 import foto from '../images/foto.png';
 import translation from '../translations/AboutMeSection';
 

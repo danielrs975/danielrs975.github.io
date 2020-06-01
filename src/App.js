@@ -12,10 +12,10 @@ class App extends Component {
 		super(props);
 		const lang = !props.match.params.lang? 'en': props.match.params.lang;
 		// console.log(lang in ['en', 'es', 'fr'], lang)
-		if (!(lang in ['en', 'es', 'fr'])) {
-			// Send to the 404 page
-			console.log("404 not found")
-		}
+		// if (!(lang in ['en', 'es', 'fr'])) {
+		// 	// Send to the 404 page
+		// 	console.log("404 not found")
+		// }
 		this.state = {
 			lang
 		};

@@ -69,7 +69,7 @@ export default class ContactForm extends React.Component {
                 subject: this.state.subject,
                 message: this.state.message
             }
-            emailjs.send('gmail', 'developer_offer', emailMsg, 'user_XzEsLkP8VJoSA6Hs4rtB2').then(
+            emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, emailMsg, process.env.REACT_APP_USER_ID).then(
                 () => {
                     toast.success('Message sent. Thank you for you interest in me. I will reply as soon as I can :)', {
                         position: toast.POSITION.TOP_RIGHT

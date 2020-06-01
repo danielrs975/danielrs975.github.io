@@ -4,16 +4,16 @@ navigation bar component
  */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimesCircle, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
+// import Button from '@material-ui/core/Button';
+// import Menu from '@material-ui/core/Menu';
+// import MenuItem from '@material-ui/core/MenuItem';
 
 // Images
 import MyIcon from '../images/danielSprite.png';
 import Scrollspy from 'react-scrollspy';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import translation from '../fixtures/menu';
 
