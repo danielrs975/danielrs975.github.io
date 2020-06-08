@@ -6,6 +6,24 @@ import WelcomeSection from './components/WelcomeSection';
 import AboutMeSection from './components/AboutMeSection';
 import PortfolioSection from './components/PortfolioSection'
 import ContactMeSection from './components/ContactMeSection';
+import database from './firebase/firebase';
+
+// Fetch my projects
+database.ref('/projects').once('value').then((snapshot) => {
+		const projects = [];
+		snapshot.forEach((childSnapshot) => {
+			projects.push({
+				...childSnapshot.val()
+			})
+		})
+		console.log(projects);
+})
+
+// Fetch my profile
+database.ref('/profile').once('value').then((snapshot) => {
+	const profile = snapshot.val();
+	console.log(profile);
+})
 
 class App extends Component {
 	constructor(props) {

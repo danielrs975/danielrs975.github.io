@@ -1,8 +1,6 @@
 /**
  * Contain the information about my projects
  */
-import joincode from '../images/joincode.PNG';
-import expensifyapp from '../images/expensifyapp.PNG';
 
 export default [
     {
@@ -24,7 +22,7 @@ export default [
             }
         ],
         image: {
-            link: joincode,
+            link: 'https://firebasestorage.googleapis.com/v0/b/resume-app-c1259.appspot.com/o/joincode.PNG?alt=media&token=7eed2e21-67a9-4538-91b7-52380f2dc217',
             alt: 'joincode-interface'
         }
     },
@@ -47,7 +45,7 @@ export default [
             }
         ],
         image: {
-            link: expensifyapp,
+            link: 'https://firebasestorage.googleapis.com/v0/b/resume-app-c1259.appspot.com/o/expensifyapp.PNG?alt=media&token=04be4e3b-df8d-4fc4-89bd-8f54209641a7',
             alt: 'expensify-app'
         }
     },
