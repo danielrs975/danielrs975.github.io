@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     name: 'Daniel Rodriguez',
     // eslint-disable-next-line
     bio: "Hi, I am a Double Degree Student pursuing a master's degree in Computer Science for Computer Networks at Télécom SudParis, France and \
