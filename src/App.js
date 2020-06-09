@@ -10,7 +10,7 @@ import ContactMeSection from './components/ContactMeSection';
 class App extends Component {
 	constructor(props) {
 		super(props);
-		const lang = !props.match.params.lang? 'en': props.match.params.lang;
+		const lang = 'en';
 		// console.log(lang in ['en', 'es', 'fr'], lang)
 		// if (!(lang in ['en', 'es', 'fr'])) {
 		// 	// Send to the 404 page
@@ -20,12 +20,12 @@ class App extends Component {
 			lang
 		};
 	}
-	componentDidUpdate(prevProps) {
-		if (this.props.location !== prevProps.location) {
-			const lang = this.props.match.params.lang;
-			this.setState({ lang });
-		}
-	}
+	// componentDidUpdate(prevProps) {
+	// 	if (this.props.location !== prevProps.location) {
+	// 		const lang = this.props.match.params.lang;
+	// 		this.setState({ lang });
+	// 	}
+	// }
 	render() {
 		return (
 			<div className="App">
