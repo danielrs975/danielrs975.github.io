@@ -4,9 +4,9 @@ navigation bar component
  */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimesCircle, faDownload } from '@fortawesome/free-solid-svg-icons'
 import Drawer from '@material-ui/core/Drawer';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
 // import Menu from '@material-ui/core/Menu';
 // import MenuItem from '@material-ui/core/MenuItem';
 
@@ -55,6 +55,12 @@ export default class NavBar extends React.Component {
 									<a href="#aboutMe">{translation[this.props.lang][1]}</a>
 									<a href="#portfolio">{translation[this.props.lang][2]}</a>
 									<a href="#contact">{translation[this.props.lang][3]}</a>
+									<Button
+										className="button--navbar"
+										>
+										<FontAwesomeIcon icon={faDownload} className="menu-icon" size="sm" />
+										My CV
+									</Button>
 									{/* <Button 
 										aria-controls="simple-menu" 
 										aria-haspopup="true" 
