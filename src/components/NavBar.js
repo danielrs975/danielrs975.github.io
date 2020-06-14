@@ -4,6 +4,7 @@ navigation bar component
  */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { storageRef } from '../firebase/firebase';
 import { faBars, faTimesCircle, faDownload } from '@fortawesome/free-solid-svg-icons'
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
@@ -35,6 +36,17 @@ export default class NavBar extends React.Component {
 		const isOpen = !this.state.isOpen;
 		this.setState({ isOpen });
 	}
+	downloadCV = () => {
+		storageRef.child("Daniel's Resume (2).pdf").getDownloadURL().then((url) => {
+			const xhr = new XMLHttpRequest();
+			xhr.responseType = 'blob';
+			// xhr.onload = (event) => {
+			// 	const blob = xhr.response
+			// };
+			xhr.open('GET', url);
+			xhr.send();
+		});
+	}
 	render() {
 		return (
 			<header className="navbar">
@@ -57,6 +69,7 @@ export default class NavBar extends React.Component {
 									<a href="#contact">{translation[this.props.lang][3]}</a>
 									<Button
 										className="button--navbar"
+										onClick={this.downloadCV}
 										>
 										<FontAwesomeIcon icon={faDownload} className="menu-icon" size="sm" />
 										My CV
