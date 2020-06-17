@@ -121,6 +121,13 @@ export default class NavBar extends React.Component {
 									<a href="#aboutMe" onClick={this.toggleMenu}>About Me</a>
 									<a href="#portfolio" onClick={this.toggleMenu}>Portfolio</a>
 									<a href="#contact" onClick={this.toggleMenu}>Contact Me</a>
+									<Button
+										className="button--navbar"
+										onClick={this.downloadCV}
+									>
+										<FontAwesomeIcon icon={faDownload} className="menu-icon" size="sm" />
+										My CV
+									</Button>
 								</Drawer>
 							</div>
 						</div>

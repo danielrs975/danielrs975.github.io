@@ -36,3 +36,9 @@
     padding: 0 0.5rem !important;
     min-width: unset !important;
 }
+
+@media (max-width: $desktop-breakpoint) {
+    & .MuiButtonBase-root {
+        width: 10rem;
+    }
+}
