@@ -40,9 +40,14 @@ export default class NavBar extends React.Component {
 		storageRef.child("Daniel's Resume (2).pdf").getDownloadURL().then((url) => {
 			const xhr = new XMLHttpRequest();
 			xhr.responseType = 'blob';
-			// xhr.onload = (event) => {
-			// 	const blob = xhr.response
-			// };
+			xhr.onload = (event) => {
+				const blob = xhr.response
+				const data = window.URL.createObjectURL(blob);
+				const link = document.createElement('a');
+				link.href = data;
+				link.download = "resume.pdf";
+				link.click();
+			};
 			xhr.open('GET', url);
 			xhr.send();
 		});
@@ -70,7 +75,7 @@ export default class NavBar extends React.Component {
 									<Button
 										className="button--navbar"
 										onClick={this.downloadCV}
-										>
+									>
 										<FontAwesomeIcon icon={faDownload} className="menu-icon" size="sm" />
 										My CV
 									</Button>
@@ -104,14 +109,14 @@ export default class NavBar extends React.Component {
 								</Scrollspy>
 							</div>
 							<div className="show-for-mobile">
-								<FontAwesomeIcon icon={faBars} size="lg" onClick={this.toggleMenu}/>
+								<FontAwesomeIcon icon={faBars} size="lg" onClick={this.toggleMenu} />
 								<Drawer
 									className="drawer"
 									variant="persistent"
 									anchor="right"
 									open={this.state.isOpen}
 								>
-									<FontAwesomeIcon icon={faTimesCircle} size="lg" onClick={this.toggleMenu} className="right-position"/>
+									<FontAwesomeIcon icon={faTimesCircle} size="lg" onClick={this.toggleMenu} className="right-position" />
 									<a href="#home" onClick={this.toggleMenu}>Home</a>
 									<a href="#aboutMe" onClick={this.toggleMenu}>About Me</a>
 									<a href="#portfolio" onClick={this.toggleMenu}>Portfolio</a>
